@@ -1,75 +1,69 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# ToDoApp
+## Opis projektu
 
-## Setup
+ToDoApp, stworzona przy użyciu Nuxt 3, TypeScript oraz Tailwind CSS, dodatkowo użyłem heroicons oraz Axiosa. Aplikacja pobiera dane z zewnętrznego API, umożliwia oznaczanie zadań jako wykonane oraz wyświetla szczegóły zadań i ich podzadań, postarałem się by projekt wyglądał w miarę przyjemnie dla oka. 
 
-Make sure to install the dependencies:
+
+## Instalacja
+
+1. Sklonuj repozytorium na swoje lokalne środowisko:
+
+   ```bash
+   git clone https://github.com/Superbananax/ToDoApp.git
+   cd ToDoApp
+   ```
+
+2. Zainstaluj zależności:
+
+   ```bash
+   npm install
+   ```
+
+## Konfiguracja
+
+Przed uruchomieniem projektu, skonfiguruj zmienne środowiskowe.
+
+1. Stwórz plik `.env` w katalogu głównym projektu
+
+
+2. Zaktualizuj wartość zmiennej `VITE_API_BASE_URL` w pliku `.env`:
+
+   ```plaintext
+   VITE_API_BASE_URL=http://XX.XX.XXX.XXX:XXXX
+   ```
+
+
+## Uruchomienie projektu
+
+Aby uruchomić projekt lokalnie, użyj komendy:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
 
-Build the application for production:
+Aplikacja będzie dostępna pod adresem `http://localhost:3000`.
 
-```bash
-# npm
-npm run build
+## Lintowanie i formatowanie
 
-# pnpm
-pnpm run build
+W projekcie zintegrowano ESLint i Prettier do utrzymania spójności kodu.
 
-# yarn
-yarn build
 
-# bun
-bun run build
-```
+- **Formatowanie kodu**:
 
-Locally preview production build:
+  ```bash
+  npm run format
+  ```
 
-```bash
-# npm
-npm run preview
 
-# pnpm
-pnpm run preview
+## Struktura projektu
 
-# yarn
-yarn preview
+- `components/` - Komponenty Vue.js używane w aplikacji
+- `composables/` - Funkcje reużywane i logika związana z taskami
+- `utils/` - Pomocnicze funkcje API
+- `assets/` - Pliki statyczne, takie jak style i obrazy
+- `pages/` - Główne widoki aplikacji
+- `public/` - Pliki publiczne, które są dostępne bezpośrednio w URL
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
