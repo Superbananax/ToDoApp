@@ -4,6 +4,7 @@
 
 ToDoApp, stworzona przy użyciu Nuxt 3, TypeScript oraz Tailwind CSS, dodatkowo użyłem heroicons oraz Axiosa. Aplikacja pobiera dane z zewnętrznego API, umożliwia oznaczanie zadań jako wykonane oraz wyświetla szczegóły zadań i ich podzadań, postarałem się by projekt wyglądał w miarę przyjemnie dla oka. 
 
+![Zrzut ekranu 2024-08-21 092829](https://github.com/user-attachments/assets/e1a6104e-8ad7-4b58-8184-0c2c458deaad)
 
 ## Instalacja
 
